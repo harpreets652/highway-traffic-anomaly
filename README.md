@@ -17,7 +17,7 @@ data set:
     * This script will search the DeepDrive directory for train/test set videos and copy them to a specified directory
         ```sh
       python construct_dataset.py --source_dir path_to_deep_drive_root --query_list data_set/training_set.txt --destination destination_path
-* Vehicle accident anomaliees were downloaded from YouTube and aren't part of DeepDrive
+* Vehicle accident anomalies were downloaded from YouTube and aren't part of DeepDrive
     * Vehicle accident anomalies are available at [this](https://drive.google.com/open?id=1Y0lfKZ4owGEZKp48yKhN2XAppxGjZYiW) Google Drive 
 
 Anomalous frame annotations are also in the `data_set` directory, anomalous-frames.txt
