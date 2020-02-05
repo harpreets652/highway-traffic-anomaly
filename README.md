@@ -15,7 +15,7 @@ filenames are listed in the `data_set` directory in text files.
 * `pos-test-set.txt` contains positive example video filenames in DeepDrive for the HTA test set.
 * `neg-test-set-dd.txt` contains negative example video filenames in DeepDrive for the HTA test set.
 * `neg-test-set-yt.txt` contains links to YouTube videos of negative examples for the HTA test set.
-* `anomalous-frames.txt` contains anomalous frame annotations
+* `anomalous-frames.txt` contains anomalous frame annotations.
 
 The following steps explain how to construct the HTA 
 data set: 
