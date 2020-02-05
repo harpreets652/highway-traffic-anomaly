@@ -9,18 +9,23 @@ The Highway Traffic Anomaly data set and related code.
 * sk-video
 * numpy
 
-The HTA data set is composed of videos from the [Berkeley DeepDrive](https://bdd-data.berkeley.edu/) data set. Video
-filenames are listed in the `data_set` directory in text files. The following steps explain how to construct the HTA 
+The HTA data set is composed of videos from the [Berkeley DeepDrive](https://bdd-data.berkeley.edu/) data set and YouTube. Video
+filenames are listed in the `data_set` directory in text files.
+* `training-set.txt` contains video filenames in DeepDrive for the HTA training set.
+* `pos-test-set.txt` contains positive example video filenames in DeepDrive for the HTA test set.
+* `neg-test-set-dd.txt` contains negative example video filenames in DeepDrive for the HTA test set.
+* `neg-test-set-yt.txt` contains links to YouTube videos of negative examples for the HTA test set.
+* `anomalous-frames.txt` contains anomalous frame annotations
+
+The following steps explain how to construct the HTA 
 data set: 
 * Download the Berkeley DeepDrive data set
 * Run **construct_dataset.py** for training set, and pos/neg test set
     * This script will search the DeepDrive directory for train/test set videos and copy them to a specified directory
         ```sh
       python construct_dataset.py --source_dir path_to_deep_drive_root --query_list data_set/training_set.txt --destination destination_path
-* Vehicle accident anomaliees were downloaded from YouTube and aren't part of DeepDrive
-    * Vehicle accident anomalies are available at [this](https://drive.google.com/open?id=1Y0lfKZ4owGEZKp48yKhN2XAppxGjZYiW) Google Drive 
+* Links to vehicle accident anomaly videos from YouTube are provided in `neg-test-set-yt.txt`. 
 
-Anomalous frame annotations are also in the `data_set` directory, anomalous-frames.txt
 
 ## Additional Files
 * `utils` directory contains other helpful scripts.
