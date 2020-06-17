@@ -1,5 +1,5 @@
 # Highway Traffic Anomaly(HTA) Data Set
-The Highway Traffic Anomaly data set and related code.
+The Highway Traffic Anomaly data set and related code for the paper [Anomalous Motion Detection on Highway Using Deep Learning](https://arxiv.org/abs/2006.08143)
 
 ## Setup
 #### Prerequisites
